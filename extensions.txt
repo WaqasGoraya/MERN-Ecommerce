@@ -1,0 +1,11 @@
+1)Es7
+2)auto close tag
+3) auto import
+4) Dotenv
+5) html to jsx
+6) prettier 
+
+
+mongodb:
+uname: leadtest77
+pass: UBnIF81YI4HQbFkK

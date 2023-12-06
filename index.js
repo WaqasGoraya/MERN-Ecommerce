@@ -8,12 +8,11 @@ import morgan from "morgan";
 
 const port = process.env.PORT || 8080;
 const DB_URL = process.env.MONGO_URL;
-const DB_NAME = process.env.MONGO_DB;
 
 app.use(express.json());
 app.use(morgan('dev'));
 
-connectDB(DB_URL,DB_NAME);
+connectDB(DB_URL);
 
 
 app.listen(port,() => {

@@ -16,7 +16,7 @@ export const requireSigIn = (req, res, next) => {
 
 export const isAdmin = async (req, res, next) => {
   try {
-    const user = await userModel.findOne({ _id: user._id });
+    const user = await userModel.findOne(req.user._id);
     if (user.role != 1) {
       return res
         .status(401)

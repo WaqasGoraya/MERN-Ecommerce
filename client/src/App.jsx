@@ -1,8 +1,13 @@
-import './App.css'
+import "./App.css";
+import Layout from "./components/Layouts/Layout";
 function App() {
-  return <>
-    <h1>Raect App</h1>
-  </>;
+  return (
+    <>
+      <Layout>
+        <h1>Raect App</h1>
+      </Layout>
+    </>
+  );
 }
 
 export default App;
